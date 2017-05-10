@@ -3,7 +3,7 @@ $color = "赤";
 
 switch ($color) {
     case "赤":
-        echo "あなたの好きな色は赤";
+        echo "あなたの好きな色は赤！";
         break;
     case "青":
         echo "あなたの好きな色は青！";
