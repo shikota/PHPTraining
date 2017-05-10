@@ -1,8 +1,3 @@
 <?php
-const TEST ='A';
-const test ='B';
+echo strlen("Hello world!");
 ?>
-<ul>
-<li><?php echo TEST ?></li>
-<li><?php echo test ?></li>
-</ul>
