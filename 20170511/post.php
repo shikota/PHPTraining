@@ -14,8 +14,8 @@ echo $comment;
 <body>
 <h1>フォームデータの送信</h1>
     <form action = "post.php" method = "post">
-            <input type = "text" name ="comment/"><br/>
-            <input type = "submit" value = "送信/">
+            <input type = "text" name ="comment"><br/>
+            <input type = "submit" value = "送信">
     </form>
 </body>
 </html>
