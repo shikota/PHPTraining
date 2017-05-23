@@ -10,7 +10,6 @@ if(isset($_POST['comment'])){
  <meta charset = “UFT-8”>
  <title>お問い合わせフォーム</title>
  <link rel = "stylesheet" href = "style.css">
- <script type = "text/javascript" src = "contact.js"></script>
  </head>
  <body>
 <center>
@@ -19,7 +18,7 @@ if(isset($_POST['comment'])){
  <tl>
 
         <div id="wrap">
-            <form action = "HTMLpage.php" method = "post" name = "form" onsubmit="return validate()">
+            <form action = "kakuninn.php" method = "post" name = "form" onsubmit="return validate()">
             <div id="table">
                 <table>
                     <tr>
@@ -42,11 +41,11 @@ if(isset($_POST['comment'])){
                     </tr>
                     <tr>
                         <td>電話番号</td>
-                        <td><input size = "5" type="text" name = "tel"/> - <input size="7" type="text" name = "tel"/> - <input size="7" type="text" name = "tel"/></td>
+                        <td><input size = "5" type="text" name = "tel"/> - <input size="7" type="text" name = "tel1"/> - <input size="7" type="text" name = "tel2"/></td>
                     </tr>
                     <tr>
                         <td>メールアドレス</td>
-                        <td><input type = "text" name = "email" placeholder = "例）guest@example.com" value = ""></td>
+                        <td><input type = "text" name = "email" placeholder = "例）guest" value = ""> @ <input size = "10" type ="text" name = "email2" placeholder = "例exapmle.com"> </td>
                     </tr>
                     <tr>
                         <td>どこで知ったか</td>
@@ -66,12 +65,13 @@ if(isset($_POST['comment'])){
                         <option value="その他">その他</option></td>
                     </tr>
                     <tr>
-                        <td>質問内容</td>
-                        <td><textarea name = "content" size = "4" placeholder = "お問い合わせ内容を入力"></textarea></td>
+                        <td>質問内容</td><br />
+                        <td><textarea name = "content" rows = "4" cols = "40" maxlength = "20" widht = "200px" heght = "80px" placeholder = "お問い合わせ内容を入力"></textarea></td>
                     </tr>
                 </table>
                 <tr>
                     <button type = "submit">確認画面へ</button>
+                    <button type = "reset">クリア</button>
                 </tr>
             </div>
     </form>
