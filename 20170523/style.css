@@ -1,0 +1,12 @@
+table{
+    width:700px;
+    height:500px;
+}
+div#wrap{
+    width:100%;
+}
+
+div#table{
+    width:400px;
+    margin: 0 auto;
+}
