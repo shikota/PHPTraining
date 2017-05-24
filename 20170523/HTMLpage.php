@@ -65,7 +65,7 @@ if(isset($_POST['comment'])){
                         <option value="その他">その他</option></td>
                     </tr>
                     <tr>
-                        <td>質問内容</td><br />
+                        <td>質問内容</td>
                         <td><textarea name = "content" rows = "4" cols = "40" maxlength = "20" widht = "200px" heght = "80px" placeholder = "お問い合わせ内容を入力"></textarea></td>
                     </tr>
                 </table>
