@@ -41,11 +41,15 @@ if(isset($_POST['comment'])){
                     </tr>
                     <tr>
                         <td>電話番号</td>
-                        <td><input size = "5" type="text" name = "tel" required pattern="^[0-9]+$"/> - <input size="7" type="text" name = "tel1" required pattern="^[0-9]+$"/> - <input size="7" type="text" name = "tel2" required pattern="^[0-9]+$"/></td>
+                        <td><input type="text" name = "tel" required size = "4" pattern="^[0-9]+$"/>
+                        <label for "tel1">-</label>
+                        <input type="text" name = "tel1" required size = "4" pattern="^[0-9]+$"/>
+                        <label for "tel2">-</label>
+                        <input type="text" name = "tel2" required size = "4" pattern="^[0-9]+$"/></td>
                     </tr>
                     <tr>
                         <td>メールアドレス</td>
-                        <td><input type = "text" name = "email" placeholder = "例）guest" value = "" required> @ <input size = "10" type ="text" name = "email2" placeholder = "例exapmle.com" required> </td>
+                        <td><input type = "text" name = "email" placeholder = "例）guest" required pattern="^[a-zA-Z]{1}[0-9a-zA-Z]+[\w\.-]+$"/>@<input type ="text" name = "email2" placeholder = "例exapmle.com" required pattern="^[\w\.-]+\.\w{2,}+$"> </td>
                     </tr>
                     <tr>
                         <td>どこで知ったか</td>

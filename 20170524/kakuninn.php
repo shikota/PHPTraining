@@ -18,10 +18,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     $address = $_POST["address"];
     $tel = $_POST["tel"];
-    $tel2 = $_POST["tel1"];
-    $tel3 = $_POST["tel2"];
-    $email = $_POST["email"];
-    $email2 = $_POST["email2"];
+    $tel1 = $_POST["tel1"];
+    $tel2 = $_POST["tel2"];
+    $email = $_POST["email"]."@".$email2 = $_POST["email2"];
     if(isset($_POST["information"][1])){
         $information="雑誌、新聞";
     }elseif(isset($_POST["information"][0])){
@@ -81,7 +80,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
                 <div>
                     <label>電話番号</label>
-                    <p><?php echo $tel; echo $tel2; echo $tel3;?></p>
+                    <p><?php echo $tel."-".$tel1."-".$tel2;?></p>
                 </div>
                 <div>
                     <label>メールアドレス</label>
