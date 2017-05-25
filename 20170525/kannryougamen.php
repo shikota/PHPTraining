@@ -41,9 +41,11 @@ if(isset($name)){
 </head>
 <body>
 <div>
-    <div>
+    <div id = "table">
+        <center>
         <h1>お問い合わせ 送信完了</h1>
         <h2><?php echo 'お問い合わせNo.'.$count; ?></h2>
+        </center>
         <p>
         お問い合わせありがとうございました。<br>
         内容を確認のうえ、回答させて頂きます。<br>

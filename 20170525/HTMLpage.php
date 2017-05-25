@@ -16,7 +16,6 @@ if(isset($_POST['comment'])){
  <h1>お問い合わせ</h1>
 </center>
  <tl>
-
         <div id="wrap">
             <form action = "kakuninn.php" method = "post" name = "form" onsubmit="return validate()">
             <div id="table">
@@ -71,8 +70,8 @@ if(isset($_POST['comment'])){
                     </tr>
                 </table>
                 <tr>
-                    <button type = "submit">確認画面へ</button>
-                    <button type = "reset">クリア</button>
+                    <button class="test" type = "submit" style = "widht : 70px; height : 40px">確認画面へ</button>
+                    <button class="test1" type = "reset" style = "widht : 70px; height : 40px">クリア</button>
                 </tr>
             </div>
     </form>

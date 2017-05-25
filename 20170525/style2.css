@@ -1,0 +1,10 @@
+div#table{
+    width : 400px;
+    margin : 0 auto;
+}
+h1{
+    color : midnightblue;
+}
+body{
+    background :  linear-gradient(-135deg, #AFEEEE, #9941D8);
+}

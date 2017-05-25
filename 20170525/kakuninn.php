@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $sex = "女性";
                 break;
             case 'unkown':
-                $sex = "";
+                $sex = "不明";
                 break;
         }
     }
@@ -49,7 +49,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-<div>
+<div id="wrap">
     <form action="kannryougamen.php" method="post">
             <input type="hidden" name="sei" value="<?php echo $name; ?>">
             <input type="hidden" name="mei" value="<?php echo $mei; ?>">
@@ -60,49 +60,53 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <input type="hidden" name="information" value="<?php echo $information; ?>">
             <input type="hidden" name="item" value="<?php echo $item; ?>">
             <input type="hidden" name="content" value="<?php echo $content; ?>">
+            <center>
             <h1 class="contact-title">お問い合わせの内容確認</h1>
-            <p>お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ「送信する」ボタンを押して下さい。</p>
+            </center>
+            <div id = "table">
+            <a class = "hei">お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ<span id = "sousin">「送信する」</span><a class = "hei">ボタンを押して下さい。</a></p>
             <div>
-                <div>
-                    <label>姓</label>
-                    <p><?php echo $name; ?></p>
+                <div class = "main">
+                    <label class = "div1">姓</label>
+                    <p class = "div2"><?php echo $name; ?></p>
                 </div>
-                <div>
-                    <label>名</label>
-                    <p><?php echo $mei; ?></p>
+                <div class = "main">
+                    <label class = "div1">名</label>
+                    <p class = "div2"><?php echo $mei; ?></p>
                 </div>
-                <div>
-                    <label>性別</label>
-                    <p><?php echo $sex; ?></p>
+                <div class = "main">
+                    <label class = "div1">性別</label>
+                    <p class = "div2"><?php echo $sex; ?></p>
                 </div>
-                <div>
-                    <label>住所</label>
-                    <p><?php echo $address; ?></p>
+                <div class = "main">
+                    <label class = "div1">住所</label>
+                    <p class = "div2"><?php echo $address; ?></p>
                 </div>
-                <div>
-                    <label>電話番号</label>
-                    <p><?php echo $tel5;?></p>
+                <div class = "main">
+                    <label class = "div1">電話番号</label>
+                    <p class = "div2"><?php echo $tel5;?></p>
                 </div>
-                <div>
-                    <label>メールアドレス</label>
-                    <p><?php echo $email3;?></p>
+                <div class = "main">
+                    <label class = "div1">メールアドレス</label>
+                    <p class = "div2"><?php echo $email3;?></p>
                 </div>
-                <div>
-                    <label>どこで知ったか</label>
-                    <p><?php echo $information; ?></p>
+                <div class = "main">
+                    <label class = "div1">どこで知ったか</label>
+                    <p class = "div2"><?php echo $information; ?></p>
                 </div>
-                <div>
-                    <label>お問い合わせ項目</label>
-                    <p><?php echo $item; ?></p>
+                <div class = "main">
+                    <label class = "div1">お問い合わせ項目</label>
+                    <p class = "div2"><?php echo $item; ?></p>
                 </div>
-                <div>
-                    <label>お問い合わせ内容</label>
-                    <p><?php echo $content; ?></p>
+                <div class = "main">
+                    <label class = "div1">お問い合わせ内容</label>
+                    <p class = "div2"><?php echo $content; ?></p>
                 </div>
             </div>
-        <input type="button" value="内容を修正する" onclick="history.back(-1)">
-        <button type="submit" name="submit">送信する</button>
+        <input class = "test" type="button" style = "widht : 70px; height : 40px" value="内容を修正する" onclick="history.back(-1)">
+        <button class = "test1" type="submit" name="submit" style = "widht : 70px; height : 40px">送信する</button>
         <a href = "HTMLpage.php">未入力状態で書き直します</a>
+    </div>
     </form>
 </div>
 </body>

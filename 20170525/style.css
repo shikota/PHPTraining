@@ -1,12 +1,41 @@
 table{
-    width:700px;
-    height:500px;
+    width : 700px;
+    height : 500px;
+}
+body{
+    background :  linear-gradient(-135deg, #AFEEEE, #9941D8);
+}
+td{
+    font-weight : 600;
+}
+h1{
+    color : midnightblue;
 }
 div#wrap{
-    width:100%;
+    width : 100%;
 }
-
 div#table{
-    width:400px;
-    margin: 0 auto;
+    width : 400px;
+    margin : 0 auto;
+}
+button.test{
+    background-color : #FFD700;/*gold*/
+    /* 角丸の指定 */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+button.test:hover{
+    /*背景色を明るい色に設定*/
+    background-color : #FFFFE0;
+}
+button.test1{
+    /* 角丸の指定 */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+button.test1:hover{
+    /*背景色を明るい色に設定*/
+    background-color : #87CEFA;/*lightskyblue*/
 }

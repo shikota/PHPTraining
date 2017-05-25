@@ -1,0 +1,77 @@
+table{
+    width : 700px;
+    height : 500px;
+}
+h1{
+    color : midnightblue;
+}
+div#wrap{
+    width : 100%;
+}
+
+div#table{
+    width : 400px;
+    margin : 0 auto;
+}
+body{
+    background :  linear-gradient(-135deg, #AFEEEE, #9941D8);
+}
+
+}
+label{
+    font-weight : 700;
+    font-size : 18px;
+}
+.hei{
+        color : black;
+}
+#sousin{
+    color : red;
+}
+.main{
+    border : 2px solid lightgray;
+    background-color : #FFFF;
+    display : flex;
+}
+.div1{
+    width : 100px;
+    border : 2px;
+    flex : 1 1 auto;
+}
+.div2{
+    border : 2px;
+    flex : 1 1 auto;
+}
+button.test{
+    background-color : #FFFAFA;/*snow*/
+    /* 角丸の指定 */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+button.test:hover{
+    /*背景色を明るい色に設定*/
+    background-color : #87CEFA;
+}
+button.test1{
+    /* 角丸の指定 */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+button.test1:hover{
+    /*背景色を明るい色に設定*/
+    background-color : #FFFFE0;
+}
+
+input.test{
+    background-color : #FFFAFA;/*snow*/
+    /* 角丸の指定 */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+input.test:hover{
+    /*背景色を明るい色に設定*/
+    background-color : #87CEFA;
+}
