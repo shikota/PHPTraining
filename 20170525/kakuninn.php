@@ -3,7 +3,7 @@
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     //フォームから送信されたデータを各変数に格納
     $name = $_POST["sei"];
-    $name = $_POST["mei"];
+    $mei = $_POST["mei"];
     if(isset($_POST["sex"]));{
         switch($_POST["sex"]){
             case 'man':
@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $sex = "女性";
                 break;
             case 'unkown':
-                $sex = "その他";
+                $sex = "";
                 break;
         }
     }
@@ -20,7 +20,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $tel = $_POST["tel"];
     $tel1 = $_POST["tel1"];
     $tel2 = $_POST["tel2"];
-    $email = $_POST["email"]."@".$email2 = $_POST["email2"];
+    $tel5 = $tel."-".$tel1."-".$tel2;
+    $email = $_POST["email"];
+    $email2 = $_POST["email2"];
+    $email3 = $email."@".$email2;
     if(isset($_POST["information"][1])){
         $information="雑誌、新聞";
     }elseif(isset($_POST["information"][0])){
@@ -48,15 +51,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 <div>
     <form action="kannryougamen.php" method="post">
-            <input type="hidden" name="sei" value="<?php echo $sei; ?>">
+            <input type="hidden" name="sei" value="<?php echo $name; ?>">
             <input type="hidden" name="mei" value="<?php echo $mei; ?>">
             <input type="hidden" name="sex" value="<?php echo $sex; ?>">
             <input type="hidden" name="address" value="<?php echo $address; ?>">
-            <input type="hidden" name="tel" value="<?php echo $tel; ?>">
-            <input type="hidden" name="tel1" value="<?php echo $tel1; ?>">
-            <input type="hidden" name="tel2" value="<?php echo $tel2; ?>">
+            <input type="hidden" name="tel" value="<?php echo $tel5; ?>">
             <input type="hidden" name="email" value="<?php echo $email; ?>">
-            <input type="hidden" name="information[]" value="<?php echo $information; ?>">
+            <input type="hidden" name="information" value="<?php echo $information; ?>">
             <input type="hidden" name="item" value="<?php echo $item; ?>">
             <input type="hidden" name="content" value="<?php echo $content; ?>">
             <h1 class="contact-title">お問い合わせの内容確認</h1>
@@ -68,7 +69,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
                 <div>
                     <label>名</label>
-                    <p><?php echo $name; ?></p>
+                    <p><?php echo $mei; ?></p>
                 </div>
                 <div>
                     <label>性別</label>
@@ -80,11 +81,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
                 <div>
                     <label>電話番号</label>
-                    <p><?php echo $tel."-".$tel1."-".$tel2;?></p>
+                    <p><?php echo $tel5;?></p>
                 </div>
                 <div>
                     <label>メールアドレス</label>
-                    <p><?php echo $email; echo $email2;?></p>
+                    <p><?php echo $email3;?></p>
                 </div>
                 <div>
                     <label>どこで知ったか</label>

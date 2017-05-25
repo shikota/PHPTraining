@@ -1,10 +1,36 @@
 <?php
-$fp = fopen( "count.txt", "r+" ); // ファイル開く
-$count = fgets( $fp, 10 ); // 9桁分値読み取り
-$count++; // 値+1（カウントアップ）
-rewind( $fp ); // ファイルポインタを先頭に戻す
-fputs( $fp, $count ); // 値書き込み
-fclose( $fp ); // ファイル閉じる
+$fp = "kannri.csv"; // ファイル開く
+$name = $_POST["sei"];
+$mei = $_POST["mei"];
+$sex = $_POST["sex"];
+$address = $_POST["address"];
+$tel = $_POST["tel"];
+$email = $_POST["email"];
+$information = $_POST["information"];
+$item = $_POST["item"];
+$content  = $_POST["content"];
+if(isset($name)){
+        $data = file('kannri.csv', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        if(!empty($data[count($data)-1])){
+            $last_row = $data[count($data)-1];
+            $list = explode(',', $last_row);
+            $count=$list[0];
+            $count=ltrim($count, '0');
+            $count+=1;
+            $count=sprintf("%06d",$count);
+        }else{
+            $count=1;
+            $count=sprintf("%06d",$count);
+        }
+        $datas = array('cnt'=>$count,'sei'=> $name,'mei'=> $mei,'sex'=>$sex,'address'=>$address,'tel'=> $tel,'email'=> $email,'information'=>$information,'item'=> $item, 'content'=>$content);
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $fpa = fopen($fp , 'a');
+            if($fpa){
+                fputcsv($fpa,$datas);
+            }
+            fclose($fpa);
+        }
+}
 ?>
 <!DOCTYPE html>
 <html lang="ja">
