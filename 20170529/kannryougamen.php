@@ -42,6 +42,7 @@ if(isset($name)){
 </head>
 <body>
 <div>
+    <div id = "bbb">
     <div id = "table">
         <center>
         <h1>お問い合わせ 送信完了</h1>
@@ -52,11 +53,13 @@ if(isset($name)){
         内容を確認のうえ、回答させて頂きます。<br>
         しばらくお待ちください。
         </p>
-        <a href="HTMLpage.php">
-                <button id = "aaa" type="button">入力画面に戻る</button>
-            </a>
-
     </div>
+    <center>
+    <a href="HTMLpage.php">
+            <button class = "aaa" type="button">入力画面に戻る</button>
+        </a>
+    </center>
+</div>
 </div>
 </body>
 </html>

@@ -50,6 +50,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
 <div id="wrap">
+    <div id = "bbb">
     <form action="kannryougamen.php" method="post">
             <input type="hidden" name="sei" value="<?php echo $name; ?>">
             <input type="hidden" name="mei" value="<?php echo $mei; ?>">
@@ -60,12 +61,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <input type="hidden" name="information" value="<?php echo $information; ?>">
             <input type="hidden" name="item" value="<?php echo $item; ?>">
             <input type="hidden" name="content" value="<?php echo $content; ?>">
-            <center>
-            <h1 class="contact-title">お問い合わせの内容確認</h1>
-            </center>
             <div id = "table">
-            <a class = "hei">お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ<span id = "sousin">「送信する」</span><a class = "hei">ボタンを押して下さい。</a></p>
-            <div>
+                <center>
+                <h1 class="contact-title">お問い合わせの内容確認</h1>
+                </center>
+            <p class = "hei">お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ<span id = "sousin">「送信する」</span>ボタンを押して下さい。</p>
+            <table>
                 <div class = "main">
                     <label class = "div1">姓</label>
                     <p class = "div2"><?php echo $name; ?></p>
@@ -102,12 +103,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <label class = "div1">お問い合わせ内容</label>
                     <p class = "div2"><?php echo $content; ?></p>
                 </div>
-            </div>
-        <input class = "test" type="button" style = "widht : 70px; height : 40px" value="内容を修正する" onclick="history.back(-1)">
-        <button class = "test1" type="submit" name="submit" style = "widht : 70px; height : 40px">送信する</button>
-        <a href = "HTMLpage.php">未入力状態で書き直します</a>
+            </table>
+        <input class = "test" type="button" value="内容の修正" onclick="history.back(-1)">
+        <button class = "test1" type="submit" name="submit">送信する</button>
+        <a id = "mozi" href = "HTMLpage.php">未入力状態で書き直します</a>
     </div>
     </form>
+</div>
 </div>
 </body>
 </html>

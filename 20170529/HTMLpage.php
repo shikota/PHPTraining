@@ -11,18 +11,20 @@ if(isset($_POST['comment'])){
  <title>お問い合わせフォーム</title>
  <link rel = "stylesheet" href = "style.css">
  </head>
- <body>
-<center>
- <h1>お問い合わせ</h1>
-</center>
+<body>
         <div id="wrap">
+            <div id = "bbb">
             <form action = "kakuninn.php" method = "post" name = "form" onsubmit="return validate()">
             <div id="table">
+                <center>
+                 <h1>お問い合わせ</h1>
+                </center>
                 <table>
                     <tr>
                         <td>姓</td>
                         <td><input type = "text" name = "sei" placeholder = "例）山田" value = "" required></td>
                     </tr>
+
                     <tr>
                         <td>名</td>
                         <td><input type = "text" name = "mei" placeholder = "例）太郎" value = "" required></td>
@@ -65,7 +67,7 @@ if(isset($_POST['comment'])){
                     </tr>
                     <tr>
                         <td>質問内容</td>
-                        <td><textarea name = "content" rows = "4" cols = "40" maxlength = "20" widht = "200px" heght = "80px" placeholder = "お問い合わせ内容を入力"></textarea></td>
+                        <td><textarea class="aaa" name = "content" rows = "4" cols = "40" maxlength = "40" widht = "200px" heght = "80px" placeholder = "お問い合わせ内容を入力"></textarea></td>
                     </tr>
                 </table>
                 <tr>
@@ -74,6 +76,7 @@ if(isset($_POST['comment'])){
                 </tr>
             </div>
     </form>
+</div>
     </div>
  </body>
  </html>

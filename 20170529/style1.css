@@ -1,6 +1,6 @@
 table{
     width : 700px;
-    height : 500px;
+    height : 700px;
 }
 h1{
     color : midnightblue;
@@ -8,70 +8,129 @@ h1{
 div#wrap{
     width : 100%;
 }
-
+div#bbb{
+    margin-left: auto;
+    margin-right: auto;
+}
 div#table{
-    width : 400px;
+    width : 650px;
     margin : 0 auto;
+    background-color : #E6E6FA;
 }
 body{
-background-color : #E6E6FA;
-}
-
-}
-label{
-    font-weight : 700;
-    font-size : 18px;
+    background-image: url("fireworks.jpg");
 }
 .hei{
-        color : black;
+    font-size: 20px;
+    color : black;
+    text-align: center;
 }
 #sousin{
     color : red;
 }
 
 .main{
-    border : 2px solid orange;
+    border-bottom : 2px solid orange;
     background-color : #FFFF;
     display : flex;
+    margin-bottom: 10px;
 }
 .div1{
-    width : 100px;
+    width : 130px;
     border : 2px;
     flex : 1 1 auto;
+    font-weight : 600;
+    font-size : 19px;
 }
 .div2{
     border : 2px;
+    font-size: 19;
     flex : 1 1 auto;
 }
-button.test{
-    -ms-transform: translateY(4px);
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
-    border-bottom: none;
+#mozi{
+    font-size: 20px;
 }
-button.test:hover{
-    /*背景色を明るい色に設定*/
-    background-color : #87CEFA;
-}
-button.test1{
-    /* 角丸の指定 */
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px
-}
-button.test1:hover{
-    /*背景色を明るい色に設定*/
-    background-color : #FFFFE0;
-}
-
 input.test{
-    /* 角丸の指定 */
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px
+    display: inline-block;
+    background-color: #BCD1FE;
+    cursor: pointer;
+    width: 150px;
+    height: 70px;
+    font-size: 21px;
+    margin:  auto;
+    padding: 5px;
+    border-radius: 25px;
+    text-shadow: -1px -1px #FFF;
+    color : #000;
+    text-align: center;
+    text-decoration: none;
+    box-shadow:0 6px 0 #046E7A, 0 12px 0 rgba(0,0,0,0.2);
+    -webkit-transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 input.test:hover{
-    /*背景色を明るい色に設定*/
-    background-color : #87CEFA;
+    background-color: #BCD1FE;
+    color: #000;
+    text-shadow: -1px -1px #FFF;
+    box-shadow: 0 3px 0 #07A5B7, 0 6px 0 rgba(0,0,0,0.2);
+    -webkit-transform: translateY(3px);/*ボタンにカーソルを*/
+    transform: translateY(3px);/*合わせたときに沈む深さの処理*/
+}
+input.test:active{
+
+    text-shadow: -1px -1px #FFF;
+    color: #3a3a;
+    background-color: #709dff;
+    box-shadow: 0 0 0 #047C71, 0 0 0 rgba(0,0,0,0.2);
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    transition-duration: 0.1s;/*クリックしたときの深さの処理の時間*/
+}
+button.test1{
+    display: inline-block;
+    background-color:#FFF4BF;
+    cursor: pointer;
+    width: 150px;
+    height: 70px;
+    font-size: 22px;
+    margin:  auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    text-shadow: -1px -1px #FFF;
+    color : #000;
+    text-align: center;
+    text-decoration: none;
+    box-shadow:0 6px 0 #046E7A, 0 12px 0 rgba(0,0,0,0.2);
+    -webkit-transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, -webkit-transform 0.3s;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+button.test1:hover{
+    background-color:#FFF4BF;
+    color: #000;
+    text-shadow: -1px -1px #FFF;
+    box-shadow: 0 3px 0 #07A5B7, 0 6px 0 rgba(0,0,0,0.2);
+    -webkit-transform: translateY(3px);/*ボタンにカーソルを*/
+    transform: translateY(3px);/*合わせたときに沈む深さの処理*/
+    -webkit-animation: flash 1s;/*ボタンを光らせる*/
+    animation: flash 1s;
+}
+button.test1:active{
+    text-shadow: -1px -1px #FFF;
+    color: #3a3a;
+    background-color: #FFD700;
+    box-shadow: 0 0 0 #047C71, 0 0 0 rgba(0,0,0,0.2);
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    transition-duration: 0.1s;/*クリックしたときの深さの処理の時間*/
+}
+@-webkit-keyframes flash {
+0% { background-color: #FFF4BF; }
+10% { background-color: #FFFCF2; }
+100% { background-color: #FFF4BF; }
+}
+@keyframes flash {
+0% { background-color: #FFF4BF; }
+10% { background-color: #FFFCF2; }
+100% { background-color: #FFF4BF; }
 }

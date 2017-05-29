@@ -6,7 +6,7 @@
 </head>
     <body>
 <h1>管理画面</h1>
-        <table border = "1">
+        <table border = "1" class = "iro">
             <title>お問い合わせ一覧</title>
             <tr>
                 <td>お問い合せ番号</td>
