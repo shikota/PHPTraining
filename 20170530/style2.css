@@ -16,7 +16,7 @@ body{
 }
 .aaa{
     display: inline-block;
-    background-color:#FFF4BF;
+    background-color:#AA0000;
     cursor: pointer;
     width: 180px;
     height: 70px;
@@ -26,7 +26,7 @@ body{
     padding: 5px;
     border-radius: 25px;
     text-shadow: -1px -1px #FFF;
-    color : #000;
+    color : #CCCCCC;
     text-align: center;
     text-decoration: none;
     box-shadow:0 6px 0 #046E7A, 0 12px 0 rgba(0,0,0,0.2);
@@ -34,8 +34,8 @@ body{
     transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 .aaa:hover{
-    background-color:#FFF4BF;
-    color: #000;
+    background-color:#AA0000;
+    color: #CCCCCC;
     text-shadow: -1px -1px #FFF;
     box-shadow: 0 3px 0 #07A5B7, 0 6px 0 rgba(0,0,0,0.2);
     -webkit-transform: translateY(3px);/*ボタンにカーソルを*/
@@ -45,22 +45,22 @@ body{
 }
 .aaa:active{
     text-shadow: -1px -1px #FFF;
-    color: #3a3a;
-    background-color: #FFD700;
+    color: #999999;
+    background-color: #330000;
     box-shadow: 0 0 0 #047C71, 0 0 0 rgba(0,0,0,0.2);
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
     transition-duration: 0.1s;/*クリックしたときの深さの処理の時間*/
 }
 @-webkit-keyframes flash {
-0% { background-color: #FFF4BF; }
-10% { background-color: #FFFCF2; }
-100% { background-color: #FFF4BF; }
+0% { background-color: #AA0000; }
+10% { background-color: #EEEEEE; }
+100% { background-color: #AA0000; }
 }
 @keyframes flash {
-0% { background-color: #FFF4BF; }
-10% { background-color: #FFFCF2; }
-100% { background-color: #FFF4BF; }
+0% { background-color: #AA0000; }
+10% { background-color: #EEEEEE; }
+100% { background-color: #AA0000; }
 }
 
 #iii{
