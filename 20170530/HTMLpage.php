@@ -59,11 +59,11 @@ if(isset($_POST['comment'])){
                     <tr>
                         <td>質問カテゴリ</td>
                         <td><select name = "item">
-                        <option value = "">お問い合わせ項目を選択してください</option>
-                        <option value="ご意見・お問い合わせ">ご意見・お問い合わせ</option>
-                        <option value="感想">感想</option>
-                        <option value="改善点">改善点</option>
-                        <option value="その他">その他</option></td>
+                        <option value = "">質問を選ぶが良い。お前は・・・</option>
+                        <option value="ご意見・お問い合わせ">人間を卒業したな？</option>
+                        <option value="感想">最後に言いたいことはあるか？</option>
+                        <option value="改善点">どMだな？</option>
+                        <option value="その他">その他なにか</option></td>
                     </tr>
                     <tr>
                         <td>質問内容</td>
