@@ -1,0 +1,22 @@
+h1{
+    color : midnightblue;
+}
+body{
+    background-image: url("fireworks.jpg");
+    background-size: contain;
+}
+.iro{
+    background-color: #FFFFFF;
+}
+div#table{
+    width : auto;
+    margin : 0 auto;
+    background-color : #E6E6FA;
+}
+div#bbb{
+    margin-left: auto;
+    margin-right: auto;
+}
+div#wrap{
+    width : 100%;
+}
