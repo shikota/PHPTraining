@@ -42,6 +42,7 @@ if(isset($name)){
 </head>
 <body>
 <div>
+            <div class = "ttt">
     <div id = "bbb">
     <div id = "table">
         <center>
@@ -59,6 +60,7 @@ if(isset($name)){
             <button class = "aaa" type="button">入力画面に戻る</button>
         </a>
     </center>
+</div>
 </div>
 </div>
 </body>

@@ -1,6 +1,11 @@
 body{
     background-image: url("fireworks.jpg");
-    background-size: contain;
+    background-size: cover;
+}
+div.ttt{
+    background-image: url("01.gif");
+    background-repeat: no-repeat;
+
 }
 div#bbb{
     margin-left: auto;

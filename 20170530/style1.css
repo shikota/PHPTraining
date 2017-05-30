@@ -4,6 +4,9 @@ body{
 }
 div#wrap{
     width : 100%;
+    background-image: url("02.gif");
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 div#bbb{
     margin-left: auto;
@@ -126,11 +129,11 @@ button.test1:active{
 }
 @-webkit-keyframes flash {
 0% { background-color: #FFF4BF; }
-10% { background-color: #FFFCF2; }
+10% { background-color: #FFFFFF; }
 100% { background-color: #FFF4BF; }
 }
 @keyframes flash {
 0% { background-color: #FFF4BF; }
-10% { background-color: #FFFCF2; }
+10% { background-color: #FFFFFF; }
 100% { background-color: #FFF4BF; }
 }

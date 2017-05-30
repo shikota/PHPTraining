@@ -12,6 +12,9 @@ body{
 }
 div#wrap{
     width : 100%;
+    background-image: url("03.gif");
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 div#bbb{
     margin-left: auto;
@@ -28,7 +31,8 @@ div#table{
 }
 .aaa{
     font-size: 18px;
-    margin-right: 40px
+    margin-right: 40px;
+    resize: none;
 }
 button.test{
     display: inline-block;

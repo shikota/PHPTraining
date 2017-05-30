@@ -22,12 +22,12 @@ if(isset($_POST['comment'])){
                 <table>
                     <tr>
                         <td>姓</td>
-                        <td><input type = "text" name = "sei" placeholder = "例）山田" value = "" required></td>
+                        <td><input type = "text" name = "sei" maxlength='8' placeholder = "例）山田" value = "" required></td>
                     </tr>
 
                     <tr>
                         <td>名</td>
-                        <td><input type = "text" name = "mei" placeholder = "例）太郎" value = "" required></td>
+                        <td><input type = "text" name = "mei" maxlength='8' placeholder = "例）太郎" value = "" required></td>
                     </tr>
                     <tr>
                         <td>性別</td>
@@ -41,15 +41,15 @@ if(isset($_POST['comment'])){
                     </tr>
                     <tr>
                         <td>電話番号</td>
-                        <td><input type="text" name = "tel" required size = "4" pattern="^[0-9]+$"/>
+                        <td><input type="text" name = "tel" required size = "4" maxlength='4' pattern="^[0-9]+$"/>
                         <label for "tel1">-</label>
-                        <input type="text" name = "tel1" required size = "4" pattern="^[0-9]+$"/>
+                        <input type="text" name = "tel1" required size = "4" maxlength='4' pattern="^[0-9]+$"/>
                         <label for "tel2">-</label>
-                        <input type="text" name = "tel2" required size = "4" pattern="^[0-9]+$"/></td>
+                        <input type="text" name = "tel2" required size = "4" maxlength='4' pattern="^[0-9]+$"/></td>
                     </tr>
                     <tr>
                         <td>メールアドレス</td>
-                        <td><input type = "text" name = "email" placeholder = "例）guest" required pattern="^[a-zA-Z]{1}[0-9a-zA-Z]+[\w\.-]+$"/>@<input type ="text" name = "email2" placeholder = "例exapmle.com" required pattern="^[\w\.-]+\.\w{2,}+$"> </td>
+                        <td><input type = "text" name = "email" placeholder = "例）guest" required pattern="^[a-zA-Z]{1}[0-9a-zA-Z]+[\w\.-]+$"/>@<input type ="text" name = "email2" placeholder = "例exapmle.com" required pattern="^[a-z0-9.-]+\.[a-z]{2,3}$"> </td>
                     </tr>
                     <tr>
                         <td>どこで知ったか</td>
@@ -59,15 +59,15 @@ if(isset($_POST['comment'])){
                     <tr>
                         <td>質問カテゴリ</td>
                         <td><select name = "item">
-                        <option value = "">質問を選ぶが良い。お前は・・・</option>
-                        <option value="ご意見・お問い合わせ">人間を卒業したな？</option>
-                        <option value="感想">最後に言いたいことはあるか？</option>
-                        <option value="改善点">どMだな？</option>
-                        <option value="その他">その他なにか</option></td>
+                        <option value = "ふははは！質問を選ぶが良い！お前・・・">ふははは！質問を選ぶが良い！お前・・・</option>
+                        <option value="人間を卒業したな？">人間を卒業したな？</option>
+                        <option value="最後に言いたいことはあるか？">最後に言いたいことはあるか？</option>
+                        <option value="リアｾﾞｳか？">リアｾﾞｳか？</option>
+                        <option value="その他なにか">その他なにか</option></td>
                     </tr>
                     <tr>
                         <td>質問内容</td>
-                        <td><textarea class="aaa" name = "content" rows = "4" cols = "40" maxlength = "40" widht = "200px" heght = "80px" placeholder = "お問い合わせ内容を入力"></textarea></td>
+                        <td><textarea class="aaa" name = "content" rows = "4" cols = "40"  widht = "200px" heght = "80px" placeholder = "お問い合わせ内容を入力"></textarea></td>
                     </tr>
                 </table>
                 <tr>
@@ -77,6 +77,6 @@ if(isset($_POST['comment'])){
             </div>
     </form>
 </div>
-    </div>
+</div>
  </body>
  </html>
