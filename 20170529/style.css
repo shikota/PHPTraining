@@ -8,6 +8,7 @@ h1{
 }
 body{
     background-image: url("fireworks.jpg");
+    background-size: cover;
 }
 div#wrap{
     width : 100%;

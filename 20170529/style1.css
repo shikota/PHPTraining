@@ -19,6 +19,7 @@ div#table{
 }
 body{
     background-image: url("fireworks.jpg");
+    background-size: contain;
 }
 .hei{
     font-size: 20px;

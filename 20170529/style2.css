@@ -12,9 +12,7 @@ div#bbb{
 }
 body{
     background-image: url("fireworks.jpg");
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: 100px 50px;
+    background-size: contain;
 }
 .aaa{
     display: inline-block;
