@@ -4,7 +4,7 @@ body{
 }
 div.ttt{
     background-image: url("01.gif");
-    background-repeat: no-repeat;
+    background-size: contain;
 
 }
 div#bbb{
